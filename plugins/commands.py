@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Uᴘᴅᴀᴛᴇs', url='https://t.me/Tamilan_BotsZ')
+                InlineKeyboardButton('🛡𝘜𝘱𝘥𝘢𝘵𝘦𝘴', url='https://t.me/Tamilan_BotsZ')
             ],
             [
-                InlineKeyboardButton('ℹ️ Hᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('🧩𝘚𝘶𝘱𝘱𝘰𝘳𝘵', url=url='https://t.me/CinemaShopGroup'),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -42,14 +42,16 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⧾𝘈𝘋𝘋 𝘔𝘌 𝘛𝘖 𝘠𝘖𝘜𝘙 𝘎𝘙𝘖𝘜𝘗⧾', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Uᴘᴅᴀᴛᴇs', url='https://t.me/Tamilan_BotsZ')
+            InlineKeyboardButton('🛡𝘜𝘱𝘥𝘢𝘵𝘦𝘴', url='https://t.me/CinemaShopLinkz'),
+            InlineKeyboardButton('🧩𝘚𝘶𝘱𝘱𝘰𝘳𝘵', url='https://t.me/CinemaShopGroup')
             ],[
-            InlineKeyboardButton('ℹ️ Hᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('👩‍💻 Rᴇᴘᴏ', url='https://Github.Com/TamilanBotsZ/AwesomeFilter'),
-            InlineKeyboardButton('😊 Aʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('🚸𝘏𝘦𝘭𝘱', callback_data='help'),
+            InlineKeyboardButton('🤴𝘖𝘸𝘯𝘦𝘳', url='https://t.me/MalluBlasters'),
+            InlineKeyboardButton('🤔𝘈𝘣𝘰𝘶𝘵', callback_data='about')
+            ],[
+            InlineKeyboardButton('🔎𝘭𝘯𝘭𝘪𝘯𝘦 𝘚𝘦𝘢𝘳𝘤𝘩', switch_inline_query_current_chat='')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -89,14 +91,16 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⧾𝘈𝘋𝘋 𝘔𝘌 𝘛𝘖 𝘠𝘖𝘜𝘙 𝘎𝘙𝘖𝘜𝘗⧾', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Uᴘᴅᴀᴛᴇs', url='https://t.me/Tamilan_BotsZ')
+            InlineKeyboardButton('🛡𝘜𝘱𝘥𝘢𝘵𝘦𝘴', url='https://t.me/CinemaShopLinkz'),
+            InlineKeyboardButton('🧩𝘚𝘶𝘱𝘱𝘰𝘳𝘵', url='https://t.me/CinemaShopGroup')
             ],[
-            InlineKeyboardButton('ℹ️ Hᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('👩‍💻 Rᴇᴘᴏ', url='https://Github.Com/TamilanBotsZ/AwesomeFilter'),
-            InlineKeyboardButton('😊 Aʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('🚸𝘏𝘦𝘭𝘱', callback_data='help'),
+            InlineKeyboardButton('🤴𝘖𝘸𝘯𝘦𝘳', url='https://t.me/MalluBlasters'),
+            InlineKeyboardButton('🤔𝘈𝘣𝘰𝘶𝘵', callback_data='about')
+            ],[
+            InlineKeyboardButton('🔎𝘭𝘯𝘭𝘪𝘯𝘦 𝘚𝘦𝘢𝘳𝘤𝘩', switch_inline_query_current_chat='')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
