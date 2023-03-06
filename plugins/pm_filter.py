@@ -716,7 +716,7 @@ async def auto_filter(client, msg, spoll=False):
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(40)
+            await asyncio.sleep(9999)
             await hehe.delete()            
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
@@ -729,7 +729,7 @@ async def auto_filter(client, msg, spoll=False):
             await asyncio.sleep(40)            
     else:
         fuk = await message.reply_text(text=cap, disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(btn))
-        await asyncio.sleep(40)
+        await asyncio.sleep(9999)
         await fuk.delete()
 
 
@@ -743,7 +743,7 @@ async def advantage_spell_chok(msg):
     gs_parsed = []
     if not g_s:
         k = await msg.reply("I couldn't find any movie in that name.")
-        await asyncio.sleep(8)
+        await asyncio.sleep(9999)
         await k.delete()
         return
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
@@ -772,7 +772,7 @@ async def advantage_spell_chok(msg):
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
         k = await msg.reply("Cᴏʀʀᴇᴄᴛ Aɴᴀ Sᴘᴇʟʟɪɴɢ Oᴅᴀ Sᴇɴᴅ Pᴀɴɴᴜɴɢᴀ")
-        await asyncio.sleep(8)
+        await asyncio.sleep(9999)
         await k.delete()
         return
     SPELL_CHECK[msg.id] = movielist
