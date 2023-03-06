@@ -8,5 +8,5 @@ else
 fi
 cd /EvaMaria
 pip3 install -U -r requirements.txt
-echo "K d Starting Bot...."
+echo "Starting Bot...."
 python3 bot.py
