@@ -424,14 +424,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('Tʜᴇᴛᴇʀ & Oᴛᴛ Kᴜ Kᴀsᴜ Iʟʟᴀ Yᴀ ♥️ Nᴀ Iʀᴜᴋᴋᴇɴ')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
-            InlineKeyboardButton('Auto Filter', callback_data='autofilter')
+            InlineKeyboardButton('𝘔𝘢𝘯𝘶𝘢𝘭 𝘍𝘪𝘭𝘵𝘦𝘳', callback_data='manuelfilter'),
+            InlineKeyboardButton('𝘈𝘶𝘵𝘰 𝘍𝘪𝘭𝘵𝘦𝘳', callback_data='autofilter')
         ], [
-            InlineKeyboardButton('Connection', callback_data='coct'),
-            InlineKeyboardButton('Extra Mods', callback_data='extra')
+            InlineKeyboardButton('𝘊𝘰𝘯𝘯𝘦𝘤𝘵𝘪𝘰𝘯', callback_data='coct'),
+            InlineKeyboardButton('𝘌𝘹𝘵𝘳𝘢 𝘔𝘰𝘥𝘴', callback_data='extra')
         ], [
-            InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('🔮 Hᴏᴍᴇ', callback_data='stats')
+            InlineKeyboardButton('🏠 𝘏𝘰𝘮𝘦', callback_data='start'),
+            InlineKeyboardButton('🔮 𝘚𝘵𝘢𝘵𝘶𝘴', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -441,11 +441,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Uᴘᴅᴀᴛᴇs', url='https://t.me/Tamilan_BotsZ'),
+            InlineKeyboardButton('🛡𝘜𝘱𝘥𝘢𝘵𝘦𝘴', url='https://t.me/CinemaShopLinkz'),
             InlineKeyboardButton('♥️ Sᴏᴜʀᴄᴇ', callback_data='source')
         ], [
-            InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('👩‍💻 Rᴇᴘᴏ', url='https://Github.Com/TamilanBotsZ/AwesomeFilter'),
+            InlineKeyboardButton('🏠 𝘏𝘰𝘮𝘦', callback_data='start'),
+            InlineKeyboardButton('🤴𝘖𝘸𝘯𝘦𝘳', url='https://t.me/MalluBlasters'),
             InlineKeyboardButton('🔐 Cʟᴏsᴇ', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
