@@ -1,9 +1,9 @@
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝗪𝗘𝗟𝗖𝗢𝗠𝗘+𝗧𝗢+𝗔𝗪𝗘𝗦𝗢𝗠𝗘+𝗙𝗜𝗟𝗧𝗘𝗥+𝗕𝗢𝗧+!!!!!;𝗖𝗥𝗘𝗔𝗧𝗘𝗗+𝗕𝗬+𝗧𝗔𝗠𝗜𝗟𝗔𝗡𝗕𝗢𝗧𝗦𝗭+𝗧𝗘𝗔𝗠+!!!!!;𝗠𝗔𝗗𝗘+𝗪𝗜𝗧𝗛+𝗧𝗔𝗠𝗜𝗟𝗔𝗡+𝗟𝗢𝗩𝗘+♥️+!!!!)</p>
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=WELCOME+TO+KD+MOVIEZ+BOT+!!!!!;CREATOR+BY+SDBOTZZ+TEAM+!!!!)</p>
 <p align="center">
-  <img src="https://te.legra.ph/file/12d811d8bd6d19299f369.jpg" alt="Awesome Filter Logo">
+  <img src="https://graph.org/file/50d95ad452bee8738da45.jpg" alt="Awesome Filter Logo">
   </p>
   <h1 align="center">
-    <b> 𝗔𝗪𝗘𝗦𝗢𝗠𝗘 𝗙𝗜𝗟𝗧𝗘𝗥</b>
+    <b> KD MOVIEZ BOT</b>
     </h1>
 
 👩‍💻 𝗩𝗘𝗥𝗦𝗜𝗢𝗡 :- 0.3 ✨
