@@ -115,7 +115,7 @@ async def next_page(bot, query):
         btn.append(
             [
                 InlineKeyboardButton("««𝘉𝘢𝘤𝘬", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"📜 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
+                InlineKeyboardButton(f"📜 𝘗𝘢𝘨𝘦𝘴 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
                 InlineKeyboardButton("𝘕𝘦𝘹𝘵»»", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
@@ -378,7 +378,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton('🔥 JOIN UPDATES 🔥', url='https://t.me/CinemaShopLinkz')
+                                InlineKeyboardButton('🔥 JOIN UPDATES 🔥', url="https://t.me/CinemaShopLinkz")
                             ]
                         ]
                     )
@@ -418,7 +418,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
             file_id=file_id,
             caption=f_caption,
             protect_content=True if ident == 'checksubp' else False
-        )
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                  InlineKeyboardButton('🔥 JOIN UPDATES 🔥', url="https://t.me/CinemaShopLinkz")
+                 ]
+                ]
+                    
+            )
+       )
+
+
     elif query.data == "pages":
         await query.answer()
     elif query.data == "reqinfo":
