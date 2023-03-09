@@ -137,9 +137,9 @@ async def advantage_spoll_choker(bot, query):
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.id)
     if not movies:
-        return await query.answer("Poda", show_alert=True)
+        return await query.answer("You are clicking on an old button which is expired.", show_alert=True)
     movie = movies[(int(movie_))]
-    await query.answer('⏳️Checking Files In My Lodge..')
+    await query.answer('⏳️Checking for Movie in database...')
     k = await manual_filters(bot, query.message, text=movie)
     if k == False:
         files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
@@ -147,7 +147,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('poda')
+            k = await query.message.edit('This Movie Not Found In DataBase')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -169,20 +169,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     title = chat.title
                 except:
                     await query.message.edit_text("Make sure I'm present in your group!!", quote=True)
-                    return await query.answer('♥️hello Bro')
+                    return await query.answer('♥️hello Bro Bro Please Share And Support')
             else:
                 await query.message.edit_text(
                     "I'm not connected to any groups!\nCheck /connections or connect to any groups",
                     quote=True
                 )
-                return await query.answer('♥️hello Bro')
+                return await query.answer('♥️hello Bro Please Share And Support')
 
         elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
             grp_id = query.message.chat.id
             title = query.message.chat.title
 
         else:
-            return await query.answer('♥️hello Bro')
+            return await query.answer('♥️hello Bro Please Share And Support')
 
         st = await client.get_chat_member(grp_id, userid)
         if (st.status == enums.ChatMemberStatus.OWNER) or (str(userid) in ADMINS):
@@ -207,7 +207,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 except:
                     pass
             else:
-                await query.answer("poda!!", show_alert=True)
+                await query.answer("Buddy Don't Touch Others Property 😁!!", show_alert=True)
     elif "groupcb" in query.data:
         await query.answer()
 
@@ -236,7 +236,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=keyboard,
             parse_mode=enums.ParseMode.MARKDOWN
         )
-        return await query.answer('♥️hello Bro')
+        return await query.answer('♥️hello Bro Please Share And Support')
     elif "connectcb" in query.data:
         await query.answer()
 
@@ -257,7 +257,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         else:
             await query.message.edit_text('Some error occurred!!', parse_mode=enums.ParseMode.MARKDOWN)
-        return await query.answer('♥️hello Bro')
+        return await query.answer('♥️hello Bro Please Share And Support')
     elif "disconnect" in query.data:
         await query.answer()
 
@@ -298,7 +298,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('♥️hello Bro')
+        return await query.answer('♥️hello Bro Please Share And Support')
     elif query.data == "backcb":
         await query.answer()
 
@@ -309,7 +309,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 "There are no active connections!! Connect to some groups first.",
             )
-            return await query.answer('♥️hello Bro')
+            return await query.answer('♥️hello Bro Please Share And Support')
         buttons = []
         for groupid in groupids:
             try:
@@ -374,30 +374,24 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     chat_id=query.from_user.id,
                     file_id=file_id,
                     caption=f_caption,
-                    protect_content=True if ident == "filep" else False,
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                            [
-                                InlineKeyboardButton('🔥 JOIN UPDATES 🔥', url="https://t.me/CinemaShopLinkz")
-                            ]
-                        ]
-                    )
+                    protect_content=True if ident == "filep" else False
+                    
                 )
-                await query.answer('Bᴀᴄᴋ Bᴜᴛᴛᴏɴ Cʟɪᴄᴋ Pᴀɴɴɪ Fɪʟᴇs Aʜ Dᴏᴡɴʟᴏᴀᴅ Pᴀɴɴɪᴋᴏɴɢᴀ', show_alert=True)
+                await query.answer('Check PM, I have sent files in pm', show_alert=True)
         except UserIsBlocked:
-            await query.answer('Uɴʙʟᴏᴄᴋ Tʜᴇ Bᴏᴛ Mᴀᴀʜ !', show_alert=True)
+            await query.answer('Unblock the bot mahn !', show_alert=True)
         except PeerIdInvalid:
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
         except Exception as e:
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("Iᴛʜᴜᴛʜᴀɴ Uʀᴜᴛᴛᴜ ✓ Fɪʀsᴛ Jᴏɪɴ Pᴀɴɴɪᴛᴜ Iᴛʜᴀ Cʟɪᴄᴋ Pᴀɴɴᴜɴɢᴀ 😒", show_alert=True)
+            await query.answer("I Like Your Smartness, But Don't Be Oversmart Okay", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
         if not files_:
-            return await query.answer('Fɪʟᴇ Kᴀɴᴀᴘᴏᴄʜɪ 😬.')
+            return await query.answer('No such file exist.😬.')
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
@@ -452,7 +446,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('Tʜᴇᴛᴇʀ & Oᴛᴛ Kᴜ Kᴀsᴜ Iʟʟᴀ Yᴀ ♥️ Nᴀ Iʀᴜᴋᴋᴇɴ')
+        await query.answer('♥️hello Bro Please Share And Support')
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('𝘔𝘢𝘯𝘶𝘢𝘭 𝘍𝘪𝘭𝘵𝘦𝘳', callback_data='manuelfilter'),
@@ -600,7 +594,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if str(grp_id) != str(grpid):
             await query.message.edit("Your Active Connection Has Been Changed. Go To /settings.")
-            return await query.answer('Tʜᴇᴛᴇʀ & Oᴛᴛ Kᴜ Kᴀsᴜ Iʟʟᴀ Yᴀ ♥️ Nᴀ Iʀᴜᴋᴋᴇɴ ')
+            return await query.answer('♥️hello Bro Please Share And Support ')
 
         if status == "True":
             await save_group_settings(grpid, set_type, False)
@@ -814,7 +808,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("Cᴏʀʀᴇᴄᴛ Aɴᴀ Sᴘᴇʟʟɪɴɢ Oᴅᴀ Sᴇɴᴅ Pᴀɴɴᴜɴɢᴀ")
+        k = await msg.reply("<b><i>I couldn't find anything related to that. Check your spelling<i></b>")
         await asyncio.sleep(9999)
         await k.delete()
         return
@@ -826,7 +820,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("Nᴇɴɢᴀ KᴇᴛᴛᴀTʜᴜ Iᴛʜᴜ Vᴀ \nEᴛʜᴜʟᴀ Eᴛʜᴜ Nᴇɴɢᴀ Kᴇᴛᴛᴀᴛʜᴜ?",
+    await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 
