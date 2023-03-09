@@ -374,7 +374,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     chat_id=query.from_user.id,
                     file_id=file_id,
                     caption=f_caption,
-                    protect_content=True if ident == "filep" else False
+                    protect_content=True if ident == "filep" else False,
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -417,7 +417,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             chat_id=query.from_user.id,
             file_id=file_id,
             caption=f_caption,
-            protect_content=True if ident == 'checksubp' else False
+            protect_content=True if ident == 'checksubp' else False,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
@@ -704,7 +704,7 @@ async def auto_filter(client, msg, spoll=False):
     btn.insert(1, 
          [
              InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-             InlineKeyboardButton(f"🗂️ ғɪʟᴇs: {len(btn)}", callback_data="files")
+             InlineKeyboardButton(f"ғɪʟᴇs: {len(btn)}", callback_data="files")
          ]
     )
 
