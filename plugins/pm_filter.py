@@ -80,8 +80,20 @@ async def next_page(bot, query):
                     callback_data=f'files_#{file.file_id}',
                 ),
             ]
-            for file in files
+           for file in files
+
         ]
+    btn.insert(0, 
+        [
+            InlineKeyboardButton(f' 🎬 {search} 🎬 ', 'qinfo')
+        ]
+    )
+    btn.insert(1, 
+         [
+             InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
+             InlineKeyboardButton(f"ғɪʟᴇs: {len(btn)}", callback_data="files")
+         ]
+    )
 
     if 0 < offset <= 10:
         off_set = 0
@@ -666,6 +678,18 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
+    
+    btn.insert(0, 
+        [
+            InlineKeyboardButton(f' 🎬 {search} 🎬 ', 'qinfo')
+        ]
+    )
+    btn.insert(1, 
+         [
+             InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
+             InlineKeyboardButton(f"🗂️ ғɪʟᴇs: {len(btn)}", callback_data="files")
+         ]
+    )
 
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
