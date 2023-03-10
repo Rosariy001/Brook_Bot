@@ -378,7 +378,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                             InlineKeyboardButton("🔥 JOIN UPDATES 🔥", url=(MAIN_CHANNEL))
+                             InlineKeyboardButton('⚔𝘑𝘰𝘪𝘯 𝘜𝘱𝘥𝘢𝘵𝘦𝘴 𝘊𝘩𝘢𝘯𝘯𝘦𝘭⚔', url="https://t.me/CinemaShopLinkz")))
                             ]
                         ]
                    )
@@ -421,7 +421,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('🔥 JOIN UPDATES 🔥', url="https://t.me/CinemaShopLinkz")
+                  InlineKeyboardButton('⚔𝘑𝘰𝘪𝘯 𝘜𝘱𝘥𝘢𝘵𝘦𝘴 𝘊𝘩𝘢𝘯𝘯𝘦𝘭⚔', url="https://t.me/CinemaShopLinkz")
                  ]
                 ]
                     
