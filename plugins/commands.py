@@ -250,7 +250,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('❤️‍🔥 ᴊᴏɪɴ ᴛᴏ ᴄʜᴀɴɴᴇʟ ❤️‍🔥', url="https://t.me/Mallu_Movie_Hub_Group") ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔𝘑𝘰𝘪𝘯 𝘜𝘱𝘥𝘢𝘵𝘦𝘴 𝘊𝘩𝘢𝘯𝘯𝘦𝘭⚔', url="https://t.me/Mallu_Movie_Hub_Group") ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
