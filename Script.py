@@ -1,6 +1,6 @@
 class script(object):
-    START_TXT = """𝙷𝙴𝙻𝙾 {},
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍"""
+    START_TXT = """𝘏𝘦𝘭𝘭𝘰 {},
+𝘔𝘺 𝘕𝘢𝘮𝘦 𝘐𝘴 <a href=https://t.me/{}>{}</a>, 𝘗𝘳𝘰𝘷𝘪𝘥𝘦 𝘔𝘰𝘷𝘪𝘦𝘴, 𝘑𝘶𝘴𝘵 𝘈𝘥𝘥 𝘔𝘦 𝘛𝘰 𝘠𝘰𝘶𝘳 𝘎𝘳𝘰𝘶𝘱 𝘈𝘯𝘥 𝘌𝘯𝘫𝘰𝘺 😍"""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """𝘔𝘺 𝘕𝘢𝘮𝘦 :{}
@@ -12,11 +12,11 @@ class script(object):
 𝘉𝘶𝘪𝘭𝘥 𝘚𝘵𝘢𝘵𝘶𝘴 : 𝘷1.0.1 [𝘉𝘦𝘛𝘢]
 𝘚𝘶𝘱𝘱𝘰𝘳𝘵 𝘎𝘳𝘰𝘶𝘱 :<a href=https://t.me/CinemaShopGroup>𝘊𝘭𝘪𝘤𝘬 𝘏𝘦𝘳𝘦</a>"""
     SOURCE_TXT = """<b>NOTE:</b>
-- Awesome Filter is a open source project. 
-- Source - https://github.com/Tamilan_BotsZ/AwesomeFilter
+- 𝘚𝘶𝘱𝘱𝘰𝘳𝘵 𝘎𝘳𝘰𝘶𝘱👇. 
+- 𝘚𝘶𝘱𝘱𝘰𝘳𝘵 𝘎𝘳𝘰𝘶𝘱 - <a href=https://t.me/CinemaShopGroup>𝘊𝘭𝘪𝘤𝘬 𝘏𝘦𝘳𝘦</a>
 
 <b>DEVS:</b>
-- <a href=https://t.me/Tamilan_BotsZ>Sharath</a>"""
+- <a href=https://t.me/MalluBlasters>Mr KD</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message
