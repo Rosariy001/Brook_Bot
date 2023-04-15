@@ -3,20 +3,24 @@ class script(object):
 𝘔𝘺 𝘕𝘢𝘮𝘦 𝘐𝘴 <a href=https://t.me/{}>{}</a>, 𝘗𝘳𝘰𝘷𝘪𝘥𝘦 𝘔𝘰𝘷𝘪𝘦𝘴, 𝘑𝘶𝘴𝘵 𝘈𝘥𝘥 𝘔𝘦 𝘛𝘰 𝘠𝘰𝘶𝘳 𝘎𝘳𝘰𝘶𝘱 𝘈𝘯𝘥 𝘌𝘯𝘫𝘰𝘺 😍"""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
-    ABOUT_TXT = """𝘔𝘺 𝘕𝘢𝘮𝘦 :{}
-𝘊𝘳𝘦𝘢𝘵𝘦 :<a href=https://t.me/MalluBlasters>Mr KD</a>
-𝘓𝘢𝘯𝘨𝘶𝘢𝘨𝘦 : 𝘗𝘺𝘵𝘩𝘰𝘯3
-𝘓𝘪𝘣𝘳𝘢𝘳𝘺 : 𝘗𝘺𝘳𝘰𝘨𝘳𝘢𝘮 𝘢𝘴𝘺𝘯𝘤𝘪𝘰 0.17.1
-𝘚𝘦𝘳𝘷𝘦𝘳 : 𝘏𝘦𝘳𝘰𝘬𝘶
+    ABOUT_TXT = """🤖 ᴍʏ ɴᴀᴍᴇ : {}
+👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/MalluBlasters>Mr KD</a>
+📝 ʟᴀɴɢᴜᴀɢᴇ : ᴘʏʀᴏɢʀᴀᴍ
+📚 ꜰʀᴀᴍᴇᴡᴏʀᴋ : ᴘʏᴛʜᴏɴ 3
+📡 ʜᴏsᴛᴇᴅ ᴏɴ : 𝘏𝘦𝘳𝘰𝘬𝘶
 𝘋𝘢𝘵𝘢𝘣𝘢𝘴𝘦 : 𝘔𝘰𝘯𝘨𝘰𝘋𝘉
-𝘉𝘶𝘪𝘭𝘥 𝘚𝘵𝘢𝘵𝘶𝘴 : 𝘷1.0.1 [𝘉𝘦𝘛𝘢]
+🌟 ᴠᴇʀsɪᴏɴ : ᴠ 13.0 [ ʙᴇᴛᴀ ]
 𝘚𝘶𝘱𝘱𝘰𝘳𝘵 𝘎𝘳𝘰𝘶𝘱 :<a href=https://t.me/CinemaShopGroup>𝘊𝘭𝘪𝘤𝘬 𝘏𝘦𝘳𝘦</a>"""
-    SOURCE_TXT = """<b>NOTE:</b>
-- 𝘚𝘶𝘱𝘱𝘰𝘳𝘵 𝘎𝘳𝘰𝘶𝘱👇. 
-- 𝘚𝘶𝘱𝘱𝘰𝘳𝘵 𝘎𝘳𝘰𝘶𝘱 - <a href=https://t.me/CinemaShopGroup>𝘊𝘭𝘪𝘤𝘬 𝘏𝘦𝘳𝘦</a>
+    SOURCE_TXT = """<b>ѕeттιngѕ
+~ sᴇᴛᴛɪɴɢs ɪs ᴍᴏsᴛ ɪᴍᴘᴏʀᴛᴀɴᴛ ғᴇᴀᴛᴜʀᴇs ɪɴ ᴛʜɪs ʙᴏᴛ.
+~ ʏᴏᴜ ᴄᴀɴ ᴇᴀsɪʟʏ ᴄᴜsᴛᴏᴍɪᴢᴇ ᴛʜɪs ʙᴏᴛ ғᴏʀ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
 
-<b>DEVS:</b>
-- <a href=https://t.me/MalluBlasters>Mr KD</a>"""
+noтe
+1. ᴏɴʟʏ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴅ ᴄʜᴀɴɢᴇs sᴇᴛᴛɪɴɢs.
+2. ɪᴛ ᴡᴏʀᴋs ᴏɴʟʏ ᴡʜᴇɴ ʏᴏᴜ ᴀʟʀᴇᴀᴅʏ ᴄᴏɴɴᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
+
+coммand and υѕeѕ
+• /settings - ᴄʜᴀɴɢᴇ sᴇᴛᴛɪɴɢs ᴀs ʏᴏᴜʀ ᴡɪsʜ</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message
