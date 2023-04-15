@@ -378,8 +378,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('💥 ɢʀᴏᴜᴘ', url="https://t.me/+vP8QdSOL8BpjM2E1"),
-                          InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/CinemaShopLinkz")
+                          InlineKeyboardButton('💥 ɢʀᴏᴜᴘ', url="https://t.me/+lTcjMF6iKqs1MjJl"),
+                          InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/CINEMACLUBLINKZ")
                        ],[
                           InlineKeyboardButton(text=f'🌿 Fɪʟᴇ sɪᴢᴇ 【 {size} 】🌿', callback_data='gxneo')
                          ]
@@ -424,8 +424,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('💥 ɢʀᴏᴜᴘ', url="https://t.me/+vP8QdSOL8BpjM2E1"),
-                  InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/CinemaShopLinkz")
+                  InlineKeyboardButton('💥 ɢʀᴏᴜᴘ', url="https://t.me/+lTcjMF6iKqs1MjJl"),
+                  InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/CINEMACLUBLINKZ")
                ],[
                   InlineKeyboardButton(text=f'🌿 Fɪʟᴇ sɪᴢᴇ 【 {size} 】🌿', callback_data='gxneo')
                  ]
@@ -769,7 +769,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b><i>🎪 ᴛɪᴛɪʟᴇ : {search}\n\n┏ 🤴 ᴀsᴋᴇᴅ ʙʏ : {message.from_user.mention}\n┣ ⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ :[XXX Tᴇɴᴛᴀᴄɪᴏɴ](t.me/Tentacion_RoBot)\n┗ 🍁 ᴄʜᴀɴɴᴇʟ : @CINEMACLUBLINKZ \n\n★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</i></b>"
+        cap = f"<b>🎪 ᴛɪᴛɪʟᴇ : {search}\n\n┏ 🤴 ᴀsᴋᴇᴅ ʙʏ : {message.from_user.mention}\n┣ ⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ :[XXX Tᴇɴᴛᴀᴄɪᴏɴ](t.me/Tentacion_RoBot)\n┗ 🍁 ᴄʜᴀɴɴᴇʟ : @CINEMACLUBLINKZ \n\n★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
