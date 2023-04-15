@@ -375,7 +375,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     file_id=file_id,
                     caption=f_caption,
                     protect_content=True if ident == "filep" else False,
-                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔𝘑𝘰𝘪𝘯 𝘜𝘱𝘥𝘢𝘵𝘦𝘴 𝘊𝘩𝘢𝘯𝘯𝘦𝘭⚔', url="https://t.me/CinemaShopLinkz") ] ] ))
+                    reply_markup=InlineKeyboardMarkup(
+                        [
+                         [
+                          InlineKeyboardButton('🧩 ɢʀᴏᴜᴘ', url="https://t.me/+lTcjMF6iKqs1MjJl"),
+                          InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/CINEMACLUBLINKZ")
+                       ],[
+                          InlineKeyboardButton(text=f'🌿 Fɪʟᴇ sɪᴢᴇ 【 {size} 】🌿', callback_data='gxneo')
+                         ]
+                        ]
+                    )
+                 )
+                          
 
                 await query.answer('Check PM, I have sent files in pm', show_alert=True)
         except UserIsBlocked:
