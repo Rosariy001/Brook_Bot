@@ -42,16 +42,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⧾𝘈𝘋𝘋 𝘔𝘌 𝘛𝘖 𝘠𝘖𝘜𝘙 𝘎𝘙𝘖𝘜𝘗⧾', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('🛡𝘜𝘱𝘥𝘢𝘵𝘦𝘴', url='https://t.me/CinemaShopLinkz'),
-            InlineKeyboardButton('🧩𝘚𝘶𝘱𝘱𝘰𝘳𝘵', url='https://t.me/CinemaShopGroup')
-            ],[
-            InlineKeyboardButton('🚸𝘏𝘦𝘭𝘱', callback_data='help'),
-            InlineKeyboardButton('🤴𝘖𝘸𝘯𝘦𝘳', url='https://t.me/MalluBlasters'),
-            InlineKeyboardButton('🤔𝘈𝘣𝘰𝘶𝘵', callback_data='about')
-            ],[
-            InlineKeyboardButton('🔎𝘭𝘯𝘭𝘪𝘯𝘦 𝘚𝘦𝘢𝘳𝘤𝘩', switch_inline_query_current_chat='')
+            InlineKeyboardButton('⚡ ᴄʟɪᴄᴋ ʜᴇʀᴇ ꜰᴏʀ ᴍᴏʀᴇ ʙᴜᴛᴛᴏɴs ⚡', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -91,16 +82,7 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('⧾𝘈𝘋𝘋 𝘔𝘌 𝘛𝘖 𝘠𝘖𝘜𝘙 𝘎𝘙𝘖𝘜𝘗⧾', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('🛡𝘜𝘱𝘥𝘢𝘵𝘦𝘴', url='https://t.me/CinemaShopLinkz'),
-            InlineKeyboardButton('🧩𝘚𝘶𝘱𝘱𝘰𝘳𝘵', url='https://t.me/CinemaShopGroup')
-            ],[
-            InlineKeyboardButton('🚸𝘏𝘦𝘭𝘱', callback_data='help'),
-            InlineKeyboardButton('🤴𝘖𝘸𝘯𝘦𝘳', url='https://t.me/MalluBlasters'),
-            InlineKeyboardButton('🤔𝘈𝘣𝘰𝘶𝘵', callback_data='about')
-            ],[
-            InlineKeyboardButton('🔎𝘭𝘯𝘭𝘪𝘯𝘦 𝘚𝘦𝘢𝘳𝘤𝘩', switch_inline_query_current_chat='')
+            InlineKeyboardButton('⚡ ᴄʟɪᴄᴋ ʜᴇʀᴇ ꜰᴏʀ ᴍᴏʀᴇ ʙᴜᴛᴛᴏɴs ⚡', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -246,11 +228,20 @@ async def start(client, message):
             f_caption=f_caption
     if f_caption is None:
         f_caption = f"{files.file_name}"
+    buttons = [
+                    [
+                        InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ', callback_data="close_pages"),
+                        InlineKeyboardButton('💥 ɢʀᴏᴜᴘ', url="https://t.me/+vP8QdSOL8BpjM2E1")
+                    ],
+                    [
+                        InlineKeyboardButton(text=f'🌿 Fɪʟᴇ sɪᴢᴇ 【 {size} 】🌿', callback_data='gxneo')
+                    ]
+                    ]
     await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔𝘑𝘰𝘪𝘯 𝘜𝘱𝘥𝘢𝘵𝘦𝘴 𝘊𝘩𝘢𝘯𝘯𝘦𝘭⚔', url="https://t.me/CinemaShopLinkz") ] ] ),
+        reply_markup=InlineKeyboardMarkup(buttons),
         protect_content=True if pre == 'filep' else False,
         )
                     
