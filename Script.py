@@ -106,3 +106,9 @@ Added By - {}
 ID - <code>{}</code>
 Name - {}
 """
+
+   OWNER_TXT = """<b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟</b>
+    
+<b>• ꜰᴜʟʟ ɴᴀᴍᴇ : 𒆜ᴍʀ ᴋᴅ [ᴏғғɪᴄɪᴀɪʟ] 🇮🇳</b>
+<b>• ᴜꜱᴇʀɴᴀᴍᴇ : @MalluBlasters</b>
+<b>• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href=https://t.me/MalluBlasters>ᴄʟɪᴄᴋ ʜᴇʀᴇ</b></a>"""
