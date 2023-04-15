@@ -76,10 +76,10 @@ coммand and υѕeѕ
 • /channel - <code>ᴛᴏ ɢᴇᴛ ʟɪꜱᴛ ᴏꜰ ᴛᴏᴛᴀʟ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴄʜᴀɴɴᴇʟꜱ</code>"""
     STATUS_TXT = """<b>╭──᛬⚡️sᴛᴀᴛᴜs ʙᴏᴀʀᴅ⚡️᛬─╮
 ├╼<b> 📂 ᴛᴏᴛᴀʟ ғɪʟᴇs : <code>{}</code></b>
-├╼<b> 🔴 ᴛᴏᴛᴀʟ ᴜsᴇʀs : <code>{}</code></b>
-├╼<b> 🟢 ᴛᴏᴛᴀʟ ᴄʜᴀᴛs : <code>{}</code></b>
-├╼<b> 🔴 ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ : <code>{}</code> 𝙼𝙱</b>
-├╼<b> 🟢 ғʀᴇᴇ sᴛᴏʀᴀɢᴇ : <code>{}</code> 𝙼𝙱</b>
+├╼<b> 🌐 ᴛᴏᴛᴀʟ ᴜsᴇʀs : <code>{}</code></b>
+├╼<b> 🔮 ᴛᴏᴛᴀʟ ᴄʜᴀᴛs : <code>{}</code></b>
+├╼<b> 💥 ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ : <code>{}</code> 𝙼𝙱</b>
+├╼<b> 🎃 ғʀᴇᴇ sᴛᴏʀᴀɢᴇ : <code>{}</code> 𝙼𝙱</b>
 ╰────────────────╯</b>"""
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
