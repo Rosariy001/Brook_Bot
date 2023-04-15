@@ -740,7 +740,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b><i>Movie Name : {search}\nRequested By : {message.from_user.mention}\nGroup : {message.chat.title}</i></b>"
+        cap = f"<b><i>🎪 ᴛɪᴛɪʟᴇ : {search}\n\n┏ 🤴 ᴀsᴋᴇᴅ ʙʏ : {message.from_user.mention}\n┣ ⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href="http://telegram.me/GroupHelp">Link</a>\n┗ 🍁 ᴄʜᴀɴɴᴇʟ : @CINEMACLUBLINKZ \n\n★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</i></b>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
