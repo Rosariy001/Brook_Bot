@@ -772,22 +772,20 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"<b>🎪 ᴛɪᴛɪʟᴇ : {search}\n\n┏ 🤴 ᴀsᴋᴇᴅ ʙʏ : {message.from_user.mention}\n┣ ⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ :[XXX Tᴇɴᴛᴀᴄɪᴏɴ](t.me/Tentacion_RoBot)\n┗ 🍁 ᴄʜᴀɴɴᴇʟ : @CINEMACLUBLINKZ \n\n★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
-            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(9999)
-            await hehe.delete()            
+            hawait message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
+                                      reply_markup=InlineKeyboardMarkup(btn))
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            hmm = await message.reply_photo(photo='https://te.legra.ph/file/471172796da37b50f4f4f.jpg', caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
         except Exception as e:
             logger.exception(e)
-            await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+            await message.reply_photo(photo='https://te.legra.ph/file/471172796da37b50f4f4f.jpg',caption=cap, reply_markup=InlineKeyboardMarkup(btn))
     else:
-        await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+        await message.reply_photo(photo='https://te.legra.ph/file/471172796da37b50f4f4f.jpg', caption=cap, reply_markup=InlineKeyboardMarkup(btn))
     if spoll:
         await msg.message.delete()
-
-
+        
 async def advantage_spell_chok(msg):
     query = re.sub(
         r"\b(pl(i|e)*?(s|z+|ease|se|ese|(e+)s(e)?)|((send|snd|giv(e)?|gib)(\sme)?)|movie(s)?|new|latest|br((o|u)h?)*|^h(e|a)?(l)*(o)*|mal(ayalam)?|t(h)?amil|file|that|find|und(o)*|kit(t(i|y)?)?o(w)?|thar(u)?(o)*w?|kittum(o)*|aya(k)*(um(o)*)?|full\smovie|any(one)|with\ssubtitle(s)?)",
@@ -797,9 +795,16 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I couldn't find any movie in that name.")
-        await asyncio.sleep(9999)
+        btn = [[
+            InlineKeyboardButton('🔍 ɢᴏᴏɢʟᴇ 🔎', url=f'https://google.com/search?q='),
+            InlineKeyboardButton(' 🔍 ʏᴀɴᴅᴇx 🔎', url=f'https://yandex.com/search?text=')
+        ],[
+            InlineKeyboardButton("🇮🇳 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 🇮🇳", callback_data="malspell")
+        ]]        
+        k=await msg.reply_photo(photo="https://telegra.ph/file/4bb1968bd091453b0070c.jpg", caption=script.SPELL_CHECK_ENG, reply_markup=InlineKeyboardMarkup(btn))    
+        await asyncio.sleep(30)
         await k.delete()
+        await msg.delete()
         return
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
     gs = list(filter(regex.match, g_s))
@@ -826,26 +831,33 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("<b><i>I couldn't find anything related to that. Check your spelling</i></b>")
-        await asyncio.sleep(9999)
+        btn = [[
+            InlineKeyboardButton('🔍 ɢᴏᴏɢʟᴇ 🔎', url=f'https://google.com/search?q='),
+            InlineKeyboardButton(' 🔍 ʏᴀɴᴅᴇx 🔎', url=f'https://yandex.com/search?text=')
+        ],[
+            InlineKeyboardButton("🇮🇳 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 🇮🇳", callback_data="malspell")
+        ]]           
+        k=await msg.reply_photo(photo="https://telegra.ph/file/4bb1968bd091453b0070c.jpg", caption=script.SPELL_CHECK_ENG, reply_markup=InlineKeyboardMarkup(btn))    
+        await asyncio.sleep(30)
         await k.delete()
+        await msg.delete()
         return
-    SPELL_CHECK[msg.id] = movielist
+    SPELL_CHECK[msg.message_id] = movielist
     btn = [[
-        InlineKeyboardButton(
-            text=movie.strip(),
-            callback_data=f"spolling#{user}#{k}",
-        )
-    ] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="𝘊𝘭𝘰𝘴𝘦", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("<b><i>I couldn't find anything related to that\nDid you mean any one of these?</i></b>",
-                    reply_markup=InlineKeyboardMarkup(btn))
-
-
+        InlineKeyboardButton('🔍 ɢᴏᴏɢʟᴇ 🔎', url=f'https://google.com/search?q='),
+        InlineKeyboardButton(' 🔍 ʏᴀɴᴅᴇx 🔎', url=f'https://yandex.com/search?text=')
+    ],[
+        InlineKeyboardButton("🇮🇳 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 🇮🇳", callback_data="malspell")
+    ]]
+    k=await msg.reply_photo(photo="https://telegra.ph/file/4bb1968bd091453b0070c.jpg", caption=script.SPELL_CHECK_ENG, reply_markup=InlineKeyboardMarkup(btn))    
+    await asyncio.sleep(30)
+    await k.delete()
+    await msg.delete()
+    return
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
     name = text or message.text
-    reply_id = message.reply_to_message.id if message.reply_to_message else message.id
+    reply_id = message.reply_to_message.message_id if message.reply_to_message else message.message_id
     keywords = await get_filters(group_id)
     for keyword in reversed(sorted(keywords, key=len)):
         pattern = r"( |^|[^\w])" + re.escape(keyword) + r"( |$|[^\w])"
