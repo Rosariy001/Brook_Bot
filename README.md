@@ -1,6 +1,6 @@
 ![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=WELCOME+TO+KD+MOVIEZ+BOT+!!!!!;CREATOR+BY+SDBOTZZ+TEAM+!!!!)</p>
 <p align="center">
-  <img src="https://graph.org/file/50d95ad452bee8738da45.jpg" alt="Awesome Filter Logo">
+  <img src="https://te.legra.ph/file/eed1a682839159fe04a22.jpg" alt="Awesome Filter Logo">
   </p>
   <h1 align="center">
     <b> KD MOVIEZ BOT</b>
