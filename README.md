@@ -3,7 +3,7 @@
   <img src="https://te.legra.ph/file/eed1a682839159fe04a22.jpg" alt="Awesome Filter Logo">
   </p>
   <h1 align="center">
-    <b> KD MOVIEZ BOT</b>
+    <b> THALAPATHY VIJAY</b>
     </h1>
 
 👩‍💻 𝗩𝗘𝗥𝗦𝗜𝗢𝗡 :- 0.3 ✨
