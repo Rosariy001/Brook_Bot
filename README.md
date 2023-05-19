@@ -3,7 +3,7 @@
   <img src="https://te.legra.ph/file/eed1a682839159fe04a22.jpg" alt="Awesome Filter Logo">
   </p>
   <h1 align="center">
-    <b> THALAPATHY VIJAY</b>
+    <b> BROOK BOT</b>
     </h1>
 
 👩‍💻 𝗩𝗘𝗥𝗦𝗜𝗢𝗡 :- 0.3 ✨
@@ -11,32 +11,32 @@
 
 ## Features
 
-- 💥Auto Filter
-- 💥Manual Filter
-- 💥Tamil Coded Repo
-- 💥Funny Tamil Repo
-- 💥Auto Delete Feature
-- 💥Fully Attractive Fonts
-- 💥Bot Pm On/Off
-- 💥Protect Content
-- 💥Copyright Free Repo
-- 💥IMDB
-- 💥Admin Commands
-- 💥Broadcast
-- 💥Index
-- 💥IMDB search
-- 💥Inline Search
-- 💥Random pics
-- 💥ids and User info 
-- 💥Stats, Users
-- 💥Ban, Unban, Leave, Disable
-- 💥Spelling Check Feature
-- 💥File Store
-- 💥Many Features
+- ⟴ Auto Filter
+- ⟴ Manual Filter
+- ⟴ Tamil Coded Repo
+- ⟴ Funny Tamil Repo
+- ⟴ Auto Delete Feature
+- ⟴ Fully Attractive Fonts
+- ⟴ Bot Pm On/Off
+- ⟴ Protect Content
+- ⟴ Copyright Free Repo
+- ⟴ IMDB
+- ⟴ Admin Commands
+- ⟴ Broadcast
+- ⟴  Index
+- ⟴ IMDB search
+- ⟴ Inline Search
+- ⟴ Random pics
+- ⟴ ids and User info 
+- ⟴ Stats, Users
+- ⟴ Ban, Unban, Leave, Disable
+- ⟴ Spelling Check Feature
+- ⟴ File Store
+- ⟴ Many Features
 
 ## Messing Editz Follow This 👇
 
- - 💗 Star This Repo 🌟 - Support Tamilan Developer 💥 -
+ - 💗 Star This Repo 🌟 - Support KDBOTZZ Developer 💥 -
 
 ### Required Variables
 * `BOT_TOKEN`: Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the Telegram API token.
